@@ -1,0 +1,23 @@
+.fatherData{
+  overflow-x: auto;
+}
+.headTable {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;  
+  text-align: center;
+  [head] {
+    padding: 5px;
+    font-weight: 900;
+  }
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;  
+  text-align: center;
+  [text] {
+    padding: 5px;
+  }
+}

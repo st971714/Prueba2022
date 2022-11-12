@@ -1,0 +1,34 @@
+.modalInformation{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top:0;
+    left:0;
+    z-index:1;
+    background-color: rgba(126, 126, 126, 0);
+
+    &__wrapper{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+    }
+
+    &__container{
+        width: auto;
+        height: auto;
+        background-color: #fff;
+        box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.1);
+        overflow: auto;
+        margin-top: 20px;                
+    }
+
+    &__{
+        padding: 15px;
+        border-left: 15px solid #fff;
+        border-right: rgba(128, 128, 128, 0.091) 15PX solid ;
+    }
+
+}

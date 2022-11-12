@@ -1,0 +1,48 @@
+<div class="display-flex mb-4" style="height: 52px; width: 100%;border-bottom: 1px solid #ced4da;;">
+  <h6 style="flex: 1 1 auto;">Editar rol</h6>
+  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
+</div>
+<div id="register-form" class="row" >
+  <!-- gce_nombre_equipo -->
+  <div class="mb-3 col-lg-4 col-sm-6">
+    <input required class="form-control" type="text" [(ngModel)]="inputData.gce_nombre_equipo" placeholder="Nombre del equipo">
+  </div>
+  <!-- gce_board -->
+  <div class="mb-3 col-lg-4 col-sm-6">
+    <input required class="form-control" type="text" [(ngModel)]="inputData.gce_board" placeholder="Board">
+  </div>
+  <!-- gce_case -->
+  <div class="mb-3 col-lg-4 col-sm-6">
+    <input required class="form-control" type="text" [(ngModel)]="inputData.gce_case" placeholder="Case">
+  </div>
+  <!-- gce_procesador -->
+  <div class="mb-3 col-lg-4 col-sm-6">
+    <input required class="form-control" type="text" [(ngModel)]="inputData.gce_procesador" placeholder="Procesador">
+  </div>
+  <!-- gce_teclado -->
+  <div class="mb-3 col-lg-4 col-sm-6">
+    <input required class="form-control" type="text" [(ngModel)]="inputData.gce_teclado" placeholder="Teclado">
+  </div>
+  <!-- gce_mouse -->
+  <div class="mb-3 col-lg-4 col-sm-6">
+    <input required class="form-control" type="text" [(ngModel)]="inputData.gce_mouse" placeholder="Mouse">
+  </div>
+  <!-- gce_pantalla -->
+  <div class="mb-3 col-sm-6 col-lg-6">
+    <input required class="form-control" type="text" [(ngModel)]="inputData.gce_pantalla" placeholder="Pantalla">
+  </div>
+  <!-- gce_estado -->
+  <label class="mb-3 col-sm-6 col-lg-6 position-relative">
+      <div class="position-absolute">Estado</div>
+      <select class="form-select" [(ngModel)]="inputData.gce_estado">
+        <option value="0">Inactivo</option>
+        <option value="1" selected>Activo</option>
+      </select>
+  </label>
+  <div class="col-2 mb-3 display-grid">
+      <button type="submit" class="btn btn-primary" (click)="saveInfomation()">
+        <i class="fas fa-plus-square me-2 vertical-align-middle" style="font-size: 1.2em;"></i>
+        Guardar
+      </button>
+  </div>
+</div>

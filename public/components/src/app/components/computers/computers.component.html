@@ -1,0 +1,44 @@
+<h6 class="ms-5">Computadores</h6>
+<div class="card">
+  <div class="card-body fatherData">
+    <div class="headTable">
+      <p head>Nombre</p>
+      <p head>Board</p>
+      <p head>Case</p>
+      <p head>Procesador</p>
+      <p head>Gráfica</p>
+      <p head>Ram</p>
+      <p head>Disco duro</p>
+      <p head>Teclado</p>
+      <p head>Mouse</p>
+      <p head>Pantalla</p>
+      <p head>Estado</p>
+      <p head></p>
+      <p head></p>
+    </div>
+    <div class="content" *ngFor="let item of items; index as id">
+      <p text>{{ item["gce_nombre_equipo"] }}</p>
+      <p text>{{ item["gce_board"] }}</p>
+      <p text>{{ item["gce_case"] }}</p>
+      <p text>{{ item["gce_procesador"] }}</p>
+      <p text>{{ item["gce_grafica"] }}</p>
+      <p text>{{ item["gce_ram"] }}</p>
+      <p text>{{ item["gce_disco_duro"] }}</p>
+      <p text>{{ item["gce_teclado"] }}</p>
+      <p text>{{ item["gce_mouse"] }}</p>
+      <p text>{{ item["gce_pantalla"] }}</p>
+      <div class="form-check form-switch">
+        <input
+          class="form-check-input"
+          type="checkbox"
+          role="switch"
+          [(ngModel)]="checkedOptions[id]"
+        />
+      </div>
+      <p text><i class="fa fa-trash-o" aria-hidden="true"></i></p>
+      <button type="button" class="btn btn-Light" (click)="openModal()">
+        <p text><i class="fa fa-pencil-square-o" aria-hidden="true"></i></p>
+      </button>
+    </div>
+  </div>
+</div>
